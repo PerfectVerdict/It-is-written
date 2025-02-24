@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+@layer utilities {
+  .button {
+    @apply mt-[300px] bg-black border-[3px] border-white text-white py-3 px-6 text-center no-underline inline-block text-base rounded-lg;
+  }
+
+  .quote {
+    @apply absolute top-[80px] max-w-20 text-white font-sans text-center max-w-[500px] text-[30px] leading-[40px];
+  }
+}
+
+body {
+
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url('../public/prayinggirl2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
