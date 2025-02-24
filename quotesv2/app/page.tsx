@@ -11,12 +11,15 @@ export default function Home() {
   }
   return (
     <>
-      <p className="quote">{quote}</p>
-      <div className="buttonContainer" style={{
-        display: "flex",
-        marginTop: "20px",
-      }}>
-        <button className="button" onClick={getRandomQuote} style={{ fontSize: "40px" }}>It Is Written</button>
+      <div className="container">
+        <button className="button" onClick={getRandomQuote} style={{ fontSize: "25px" }}>It Is Written</button>
+
+        <p className="quote">{quote}</p>
+
+        <div className="buttonContainer" style={{
+
+        }}>
+        </div>
       </div>
     </>
   );

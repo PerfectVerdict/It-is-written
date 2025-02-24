@@ -16,13 +16,16 @@
 }
 
 @layer utilities {
+
   .button {
-    @apply mt-[600px] bg-black border-[3px] border-white text-white py-5 px-11 text-center no-underline inline-block text-base rounded-lg;
+    @apply absolute bottom-[10px] right-[10px] border-[1px] border-white text-[2px] text-white py-2 px-5 text-center no-underline inline-block text-base rounded-md;
   }
 
   .quote {
-    @apply absolute top-[60px] text-white font-sans text-center max-w-[400px] text-[40px] leading-[60px] px-7;
+    @apply absolute top-[20px] text-white right-[10px] left-[10px] text-center max-w-[400px] text-[25px] leading-[40px] px-10;
   }
+
+
 }
 
 body {
